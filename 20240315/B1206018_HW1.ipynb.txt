@@ -1,0 +1,119 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "IZCv1qxB7cvY",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3b8b89d1-0d17-4bc7-919b-314956dd17ee"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I'm a student\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=\"I'm a student\"\n",
+        "print(a)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a='''計算兩點距離\n",
+        "兩座標點:A(x1,y1)，B(x2,y2)'''\n",
+        "print(a)\n",
+        "\n",
+        "b=float(input(\"請輸入x1：\"))\n",
+        "c=float(input(\"請輸入y1：\"))\n",
+        "d=float(input(\"請輸入x2：\"))\n",
+        "f=float(input(\"請輸入y2：\"))\n",
+        "\n",
+        "g=(d-b)**2+(f-c)**2\n",
+        "h=g**(1/2)\n",
+        "print(\"AB間的距離：\", h)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "37p1FxskDCRc",
+        "outputId": "11342d37-6b71-4079-adc6-e38a8822b360"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "計算兩點距離\n",
+            "兩座標點:A(x1,y1)，B(x2,y2)\n",
+            "請輸入x1：0\n",
+            "請輸入y1：1\n",
+            "請輸入x2：3\n",
+            "請輸入y2：1\n",
+            "AB間的距離： 3.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a='計算BMI'\n",
+        "print(a)\n",
+        "\n",
+        "b=float(input(\"請輸入身高(cm)：\"))\n",
+        "c=float(input(\"請輸入體重：\"))\n",
+        "\n",
+        "b/=100\n",
+        "b**=2\n",
+        "d=c/b\n",
+        "print(\"BMI：\", d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "q0ws2JBVUR2X",
+        "outputId": "08cf2aad-e814-4d14-e76e-8753f670be83"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "計算BMI\n",
+            "請輸入身高(cm)：100\n",
+            "請輸入體重：20\n",
+            "BMI： 20.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
