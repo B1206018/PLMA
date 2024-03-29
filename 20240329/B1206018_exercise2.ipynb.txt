@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 41,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "OZIpRE-21mgh",
+        "outputId": "07ab7170-e904-4c41-db1f-33b653e1aac4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'姓名': '賴宏瑋', '性別': '男', '作業分數': [100, 100, 90], '學號': 'M1129020'}\n",
+            "96.66666666666667\n"
+          ]
+        }
+      ],
+      "source": [
+        "a={'姓名':'賴宏瑋','性別':'男','作業分數':[80,95,100,90]}\n",
+        "b=a.setdefault('學號','M1129020')\n",
+        "a['作業分數'][1]=100\n",
+        "del a['作業分數'][0]\n",
+        "print(a)\n",
+        "c=(a['作業分數'][0]+a['作業分數'][1]+a['作業分數'][2])/3\n",
+        "print(c)"
+      ]
+    }
+  ]
+}
